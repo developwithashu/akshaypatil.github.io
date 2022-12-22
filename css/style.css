@@ -1,0 +1,214 @@
+@font-face
+{
+    font-family:Quicksand_Bold;
+    src: url(../font/quicksand/Quicksand_Bold.otf);
+}
+@font-face
+{
+    font-family:Quicksand_Light;
+    src: url(../font/quicksand/Quicksand_Light.otf);
+}
+@font-face
+{
+    font-family:Quicksand_Book;
+    src: url(../font/quicksand/Quicksand_Book.otf);
+}
+@font-face
+{
+    font-family:Quicksand_Book_Oblique;
+    src: url(../font/quicksand/Quicksand_Book_Oblique.otf);
+}
+body
+{
+    margin: auto;
+    padding: auto;
+    background-color: #222222;
+    color:white;
+}
+.avtar
+{
+    border-radius:57% 43% 53% 47% / 36% 38% 62% 64%;
+    width:70%;
+}
+.name-text h1
+{
+    font-size: 6em;
+    line-height: 110px;
+    font-family:Quicksand_Bold;
+    font-weight:700;
+    text-align:right;
+}
+.name-text p
+{
+    font-size:16px;
+    line-height:24px;
+    font-weight:400;
+    text-align:right;
+    font-family:Quicksand_Light;
+    overflow: hidden;
+    border-right: .15em solid #f06d55;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #f06d55; }
+  }
+.social div {
+    font-size:34px;
+    padding-left: 10px;
+}
+.custom-button, button {
+    background-color: #f06d55;
+    border: none;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 6px;
+    font-size: 18px;
+    font-family:Quicksand_Book;
+}
+.custom-button:hover
+{
+    text-decoration: none;
+    color: #fff;
+}
+.dark-bg {
+    background-color: #1f1f1f;
+}
+.dark-bg h2
+{
+    font-family:Quicksand_Bold;
+    font-weight: 700;
+}
+.dark-bg h4
+{
+    font-family:Quicksand_Bold;
+    font-weight: 700;
+}
+.dark-bg h5
+{
+    font-size: 1.25rem;
+    font-family:Quicksand_Book;
+}
+.dark-bg h5 a:hover
+{
+    text-decoration: none;
+}
+.dark-bg p
+{
+    font-size:16px;
+    line-height:24px;
+    font-weight:400;
+    font-family:Quicksand_Light;
+}
+.projects h2
+{
+    font-size:32px;
+    line-height: 38.4px;
+    font-weight: 700;
+    font-family:Quicksand_Bold;
+}
+.projects h4
+{
+    font-weight:600;
+    font-family:Quicksand_Light;
+    font-size: 20px;
+}
+.project_img
+{
+    width:100%;
+    height:100%;
+    border-radius: 15px;
+}
+.project_img
+{
+    transition: 1s ease;
+    }
+.project_img:hover
+{
+    -webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+transition: 1s ease;
+        }
+.work-img 
+{
+width: 40%;
+-webkit-filter: grayscale(1);
+filter: grayscale(1);
+transition: -webkit-filter 0.2s ease-in-out;
+transition: filter 0.2s ease-in-out;
+transition: filter 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
+cursor: pointer;
+}
+.work-img:hover 
+{
+transition: -webkit-filter 0.2s ease-in-out;
+transition: filter 0.2s ease-in-out;
+transition: filter 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
+-webkit-filter: grayscale(0);
+filter: grayscale(0);
+}
+.work-inquiry {
+    background-color: rgb(255, 255, 255, 0.9);
+    color: black;
+    border-radius: 16px;
+  }
+  .work-inquiry p
+  {
+    font-family:Quicksand_Light;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .custon-button, button {
+    background-color: #f06d55;
+    border: none;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family:Quicksand_Book;
+}
+.custon-button:hover
+{
+    text-decoration: none;
+    color: #fff;
+}
+.footer a
+{
+    font-size: 1.25rem;
+    font-family:Quicksand_Book;
+}
+.footer p
+  {
+    font-family:Quicksand_Light;
+    font-size:16px;
+    font-weight: 600;
+  }
+  .social .icon
+  {
+    font-size: 34px;
+  }
+@media only screen and (max-width: 800px){
+.hero-sec {
+    align-items: unset!important;
+    position: relative!important;
+}
+}
+.hero-sec .social {
+    justify-content: center;
+  }
+@media only screen and (max-width: 800px){
+.hero-sec img {
+    position: relative;
+    top: 12%;
+}
+}
